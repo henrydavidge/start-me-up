@@ -1,2 +1,10 @@
 source "https://rubygems.org"
-gem 'sinatra', '1.1.0'
+group :sinatra do
+	gem 'sinatra'
+	gem 'sinatra-routing-helpers'
+end
+
+group :sprockets do
+	gem 'sprockets'
+	gem 'sprockets-helpers'
+end
