@@ -2,5 +2,5 @@ require 'sinatra'
 
 configure do
 	set :root, File.dirname('../')
-	set :public_folder, File.join(root, 'assets')
+	set :public_folder, Proc.new{File.join(root, 'assets')}
 end
